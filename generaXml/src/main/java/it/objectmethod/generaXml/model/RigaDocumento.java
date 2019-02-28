@@ -4,7 +4,7 @@ public class RigaDocumento {
 	
 	private Integer num_riga;
 	private String descrizione;
-	private Integer quantita;
+	private Double quantita;
 	private Double prezzo;
 	
 	
@@ -21,10 +21,10 @@ public class RigaDocumento {
 	public void setDescrizione(String descrizione) {
 		this.descrizione = descrizione;
 	}
-	public Integer getQuantita() {
+	public Double getQuantita() {
 		return quantita;
 	}
-	public void setQuantita(Integer quantita) {
+	public void setQuantita(Double quantita) {
 		this.quantita = quantita;
 	}
 	public Double getPrezzo() {

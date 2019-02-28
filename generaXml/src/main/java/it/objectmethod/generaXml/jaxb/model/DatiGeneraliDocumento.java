@@ -4,9 +4,10 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "DatiGeneraliDocumento")
-
+@XmlType(propOrder = { "tipoDocumento", "divisa", "data", "numero", "causale" })
 public class DatiGeneraliDocumento {
 	
 	private String tipoDocumento;

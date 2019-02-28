@@ -29,7 +29,7 @@ public class DatiFatturaDBMapper  implements RowMapper<DatiFatturaDB>{
 		
 		
 		documento.setId_documento(rs.getInt("id_documento"));
-		documento.setNum_progressivo(rs.getInt("num_progressivo"));
+		documento.setNum_progressivo(rs.getString("num_progressivo"));
 		azienda.setPar_iva(rs.getString("par_iva_cp"));
 		azienda.setCod_fiscale(rs.getString("cod_fiscale_cp"));
 		azienda.setRag_soc_1(rs.getString("denominazione_cp"));
@@ -51,7 +51,7 @@ public class DatiFatturaDBMapper  implements RowMapper<DatiFatturaDB>{
 		documento.setData_prev_consegna(rs.getString("data_ora_consegna"));
 		rigaDocumento.setNum_riga(rs.getInt("num_linea_dati_beni_servizi"));
 		rigaDocumento.setDescrizione(rs.getString("descrizione_fornitura"));
-		rigaDocumento.setQuantita(rs.getInt("quantita"));
+		rigaDocumento.setQuantita(rs.getDouble("quantita"));
 		rigaDocumento.setPrezzo(rs.getDouble("prezzo"));
 		iva.setPer_aliquota(rs.getDouble("aliquota_iva"));
 		iva.setTipo_iva(rs.getString("tipo_iva"));

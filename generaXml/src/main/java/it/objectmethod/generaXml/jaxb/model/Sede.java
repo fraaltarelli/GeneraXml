@@ -2,9 +2,10 @@ package it.objectmethod.generaXml.jaxb.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "Sede")
-
+@XmlType(propOrder = { "indirizzo", "cap", "comune", "provincia", "nazione" })
 public class Sede {
 	
 	private String indirizzo;

@@ -3,7 +3,7 @@ package it.objectmethod.generaXml.model;
 public class Documento {
 
 	private Integer id_documento;
-	private Integer num_progressivo;
+	private String num_progressivo;
 	private Integer num_documento;
 	private String data_documento;
 	private String data_prev_consegna;
@@ -16,10 +16,10 @@ public class Documento {
 	public void setId_documento(Integer id_documento) {
 		this.id_documento = id_documento;
 	}
-	public Integer getNum_progressivo() {
+	public String getNum_progressivo() {
 		return num_progressivo;
 	}
-	public void setNum_progressivo(Integer num_progressivo) {
+	public void setNum_progressivo(String num_progressivo) {
 		this.num_progressivo = num_progressivo;
 	}
 	public Integer getNum_documento() {

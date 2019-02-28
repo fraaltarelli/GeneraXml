@@ -32,7 +32,7 @@ public class DaoFatturaElettronicaImpl implements IDaoFatturaElettronica{
 		List<DatiFatturaDB> list = new ArrayList<DatiFatturaDB>();
 		String sql ="select d.id_documento, d.num_progressivo, " + 
 				"       az.par_iva par_iva_cp, az.cod_fiscale cod_fiscale_cp, az.rag_soc_1 denominazione_cp," + 
-				"       a.nazione paese_cc, a.par_iva par_iva_cc, a.cod_fiscale cod_fiscale_cc, a.rag_soc_1 denominazione_cc, a.indirizzo indirizzo_sede_cc, a.cap cap_sede_cc, a.localita localita_sede_cc, a.provincia provincia_sede_cc, a.nazione nazione_sede_cc," + 
+				"       a.nazione paese_cc, a.par_iva par_iva_cc, a.cod_fiscale cod_fiscale_cc, a.rag_soc_1 denominazione_cc, a.indirizzo indirizzo_sede_cc, a.cap cap_sede_cc, a.localita localita_sede_cc, a.provincia provincia_sede_cc," + 
 				"       pd.descrizione tipo_documento, d.data_documento, d.num_documento, " + 
 				"       av.nazione paese_vettore, av.par_iva par_iva_vettore, av.cod_fiscale cod_fiscale_vettore, av.rag_soc_1 denominazione_vettore," + 
 				"       d.data_prev_consegna data_ora_consegna, " + 
@@ -51,7 +51,6 @@ public class DaoFatturaElettronicaImpl implements IDaoFatturaElettronica{
 		
 		list = this.jdbcTemplateObject.query(sql, new Object[]{idDocumento}, new DatiFatturaDBMapper());
 		
-		sql ="prova";
 		
 		return list;
 	}

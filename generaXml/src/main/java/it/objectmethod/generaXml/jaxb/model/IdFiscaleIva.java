@@ -2,9 +2,10 @@ package it.objectmethod.generaXml.jaxb.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "IdFiscaleIva")
-
+@XmlType(propOrder = { "idPaese", "idCodice" })
 public class IdFiscaleIva {
 
 	private String idPaese;

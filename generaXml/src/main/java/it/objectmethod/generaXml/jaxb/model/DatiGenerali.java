@@ -2,9 +2,10 @@ package it.objectmethod.generaXml.jaxb.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "DatiGenerali")
-
+@XmlType(propOrder = { "datiGeneraliDocumento", "datiOrdineAcquisto", "datiContratto", "datiConvenzione", "datiRicezione", "datiTrasporto" })
 public class DatiGenerali {
 
 	private DatiGeneraliDocumento datiGeneraliDocumento;

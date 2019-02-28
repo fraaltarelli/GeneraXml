@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "FatturaElettronicaHeader")
-//@XmlType(propOrder = { "datiTrasmissione", "cedentePrestatore", "cessionarioCommittente"})
+@XmlType(propOrder = { "datiTrasmissione", "cedentePrestatore", "cessionarioCommittente"})
 public class FatturaElettronicaHeader {
 	
 	private DatiTrasmissione datiTrasmissione;

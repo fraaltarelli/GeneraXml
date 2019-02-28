@@ -2,9 +2,10 @@ package it.objectmethod.generaXml.jaxb.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "DatiTrasmissione")
-
+@XmlType(propOrder = { "idTrasmittente", "progressivoInvio", "formatoTrasmissione", "codiceDestinatario"})
 public class DatiTrasmissione {
 
 	private IdTrasmittente idTrasmittente;

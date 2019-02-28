@@ -2,10 +2,11 @@ package it.objectmethod.generaXml.jaxb.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 @XmlRootElement(name = "DatiConvenzione")
-
+@XmlType(propOrder = { "riferimentoNumeroLinea", "idDocumento", "numItem", "codiceCUP", "codiceCIG" })
 public class DatiConvenzione {
 
 	private Integer riferimentoNumeroLinea;
